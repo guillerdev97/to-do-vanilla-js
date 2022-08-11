@@ -1,0 +1,12 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+h1 {
+    color: rgb(13, 55, 161);
+    opacity: 0.8;
+    font-size: 65px;
+    text-align: center;
+}
