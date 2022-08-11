@@ -1,0 +1,42 @@
+main {
+    margin-top: 50px;
+}
+
+form {
+    width: 400px;
+    margin: auto;
+}
+form input {
+    width: 100%;
+    padding: 7px 12px;
+    border: none;
+    font-size: 22px;
+}
+input::placeholder {
+    color: #d5d5d5;
+}
+
+.toDoContent {
+    width: 400px;
+    margin: auto;
+    background-color: #fff;
+    list-style-type: none;
+}
+.toDoContent li {
+    cursor: pointer;
+    padding: 7px 12px;
+    border-top: 1px solid #e5e5e5;
+    font-size: 18px;
+}
+.toDoContent li.completed {
+    color: #b6b6b6;
+    text-decoration: line-through;
+}
+
+small {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    color: #b5b5b5;
+    text-align: center;
+}
