@@ -41,9 +41,13 @@ function addToDo(toDo) {
         })
 
         toDoItem.addEventListener("contextmenu", () => {
-            toDoItem.remove();
+            const confirmAction = confirmDelete();
 
-            update();
+            if(confirmAction) {
+                toDoItem.remove();
+
+                update();
+            }
         })
 
         content.appendChild(toDoItem);
@@ -68,3 +72,17 @@ function update() {
 
     localStorage.setItem("toDos", JSON.stringify(toDos));
 }
+
+function confirmDelete()
+    {
+        var respuesta = confirm("Are you sure you want to delete?");
+
+        if (respuesta == true) 
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
