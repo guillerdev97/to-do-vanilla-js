@@ -31,6 +31,7 @@ input::placeholder {
 .toDoContent li.completed {
     color: #b6b6b6;
     text-decoration: line-through;
+    text-decoration-color: red;
 }
 
 small {
